@@ -1,5 +1,5 @@
 # lancaster-covid
-Quick script to scrape website for county covid data. Data is sent via MQTT and picked up by [Home Assistant](https://home-assistant.io) to mimic the risk dial. Main use is [TileBoard](https://community.home-assistant.io/t/tileboard-new-dashboard-for-homeassistant/57173) gauge on Amazon Fire Tablets.  
+Python script to scrape website for county covid data. Data is sent via MQTT and picked up by [Home Assistant](https://home-assistant.io) to mimic the risk dial. Main use is [TileBoard](https://community.home-assistant.io/t/tileboard-new-dashboard-for-homeassistant/57173) gauge on Amazon Fire Tablets.  
 
 ## Example Message:  
 {"timestamp": "2020-07-13T20:14:35.339673", "pre_week": "2.5", "cur_week": "4.5", "gauge_caption": "Updated Friday, July 10"}  
@@ -67,3 +67,9 @@ sensor:
    },
 }
 ``` 
+
+## What the real Lancaster Covid Dial from [Website](https://www.lincoln.ne.gov/city/covid19/) looks like
+![Image of Lancaster Covid Dial](/images/lancaster_covid_dial.png)
+
+## Fire HD Tablet showing minimal dial using [Home Assistant](https://home-assistant.io) and [TileBoard](https://community.home-assistant.io/t/tileboard-new-dashboard-for-homeassistant/57173)
+![Image of Fire HD 8](/images/fire_hd8.png)
