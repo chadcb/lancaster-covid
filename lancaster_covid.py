@@ -12,7 +12,7 @@ MQTT_PORT = 1883
 MQTT_TOPIC = "covid/lancaster"
 URL = "https://lincoln.ne.gov/city/covid19/"
 COVID_DIAL_REGEX = re.compile(
-    r"The dial's previous week pointer is at (\d*\.?\d+) on a scale of 0-8 \(0 is low risk; 8 is severe risk\). The dial's current week pointer is at (\d*\.?\d+)."
+    r"\D+ (\d*\.?\d+) on a scale of 0-8 \(0 is low risk; 8 is severe risk\). \D+ (\d*\.?\d+)."
 )
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 11_0 like Mac OS X) AppleWebKit/604.1.38 (KHTML, like Gecko) Version/11.0 Mobile/15A372 Safari/604.1"
